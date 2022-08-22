@@ -1,3 +1,21 @@
 body{
-    background-color: lightblue;
+    background-color: burlywood;
+}
+body{
+    border: dotted saddlebrown;
+}
+    h1{
+    font-family: cursive;
+}
+    h1{
+    text-align: center;
+}
+    h1{
+    font-size: xxx-large;
+}
+    h1 {text-shadow: -1px 0 whitesmoke, 0 2px whitesmoke,
+    1px 0 black, 0 -1px black;
+    }
+li {
+    font-family: cursive;
 }
