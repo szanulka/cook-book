@@ -4,6 +4,9 @@ body{
 body{
     border: dotted saddlebrown;
 }
+body{
+    margin: 40px;
+}
     h1{
     font-family: cursive;
 }
@@ -19,3 +22,4 @@ body{
 li {
     font-family: cursive;
 }
+
