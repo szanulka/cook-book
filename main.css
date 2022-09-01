@@ -1,25 +1,30 @@
 body{
     background-color: burlywood;
-}
-body{
     border: dotted saddlebrown;
-}
-body{
     margin: 40px;
+    margin-left: 90px;
 }
     h1{
     font-family: cursive;
-}
-    h1{
     text-align: center;
-}
-    h1{
     font-size: xxx-large;
-}
-    h1 {text-shadow: -1px 0 whitesmoke, 0 2px whitesmoke,
+    text-shadow: -1px 0 whitesmoke, 0 2px whitesmoke,
     1px 0 black, 0 -1px black;
     }
 li {
     font-family: cursive;
 }
 
+img:hover{
+    opacity:70%;
+    transition-duration: 1s;
+}
+
+.menu-image {
+    width: 80%;
+}
+
+table, td{
+    border: 1px solid black;
+    text-align: left;
+}
