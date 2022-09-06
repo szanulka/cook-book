@@ -28,57 +28,64 @@ table, td{
     text-align: left;
 }
 
-/* Dropdown Button */
-/*.dropbtn {*/
-/*    background-color: #04AA6D;*/
-/*    color: white;*/
-/*    padding: 16px;*/
-/*    font-size: 16px;*/
-/*    border: none;*/
-/*}*/
-
-/* The container <div> - needed to position the dropdown content */
-/*.dropdown {*/
-/*    position: relative;*/
-/*    display: inline-block;*/
-/*}*/
-
-/* Dropdown Content (Hidden by Default) */
-/*.dropdown-content {*/
-/*    display: none;*/
-/*    position: absolute;*/
-/*    background-color: #f1f1f1;*/
-/*    min-width: 160px;*/
-/*    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-/*    z-index: 1;*/
-/*}*/
-
-
-/* Links inside the dropdown */
-
-
-
-
-.testcontent {
-    display: none;
+.header {
+    background-color: saddlebrown;
+    display: flex;
+    align-items: baseline;
+    padding: .5rem;
+    gap: 1rem;
+    width: max-content;
 }
 
-.testbtn:hover .testcontent {
-    display: block;
+.link {
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: darkorange;
+    font-family: inherit;
+    cursor: pointer;
+    padding: 0;
 }
 
-
-/*.dropdown-content a {*/
-/*    color: black;*/
-/*    padding: 12px 16px;*/
-/*    text-decoration: none;*/
-/*    display: block;*/
-/*}*/
-
-.dropdown-content {
-    display: none;
+.dropdown.active > .link,
+.link:hover {
+    color: black;
+}
+.dropdown {
+    position: relative;
 }
 
-.dropbtn:hover .dropdown-content {
-    display: block;
+dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: calc(100% + .25rem);
+    background-color: saddlebrown;
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0, .1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out;
+}
+
+.dropdown.active > .link + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.information-grid {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+}
+
+.dropdown-links {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.login-form > input {
+    margin-bottom:  .5rem;
 }

@@ -1,8 +1,40 @@
-<div class="dropdown">
-    <button class="dropbtn">Menu</button>
-    <div class="dropdown-content">
-        <a href="#">Offer</a>
-        <a href="#">Contact</a>
-        <a href="#">About</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <title>Soups</title>
+    <script src="script.js" defer></script>
+</head>
+<div class="header">
+    <div class="dropdown">
+        <button class="link" data-dropdown-button>Menu Start</button>
+        <div class="dropdown-menu information-grid">
+            <div class="dropdown-heading">Soup</div>
+                <a href="#" class="link">Chicken Soup</a>
+                <a href="#" class="link">Vegetables Soup</a>
+                <a href="#" class="link">Seafood Soup</a>
+        </div>
+        <div class="dropdown-menu information-grid">
+            <div class="dropdown-heading">Dessert</div>
+            <a href="#" class="link">Panna Cotta</a>
+            <a href="#" class="link">Apple Cake</a>
+            <a href="#" class="link">Fruits in chocolate fondue</a>
+        </div>
+    </div>
+    <a href="#" class="link">Contact</a>
+    <div class="dropdown" data-dropdown>
+        <button class="link"data-dropdown-button>Login</button>
+        <div class=".dropdown-menu">
+            <form class="login-form">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
     </div>
 </div>
+<div>
