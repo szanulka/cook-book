@@ -72,7 +72,27 @@ table, td{
     transition: opacity 150ms ease-in-out;
 }
 
+.dropdown-menu-right {
+    position: absolute;
+    right: 0;
+    top: calc(100% + .25rem);
+    background-color: saddlebrown;
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0, .1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out;
+}
+
 .dropdown.active > .link + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.dropdown.active > .link + .dropdown-menu-right {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
@@ -93,7 +113,7 @@ table, td{
     margin-bottom:  .5rem;
 }
 
-.right{
+.right {
     position: absolute;
     right: 40px;
 }
