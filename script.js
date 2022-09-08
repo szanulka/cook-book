@@ -1,7 +1,6 @@
 $("#header").load('header.html'); //this loads header.html to the div with the id #header and css works here this time
 
 document.addEventListener('click', e=> {
-    alert('clickedy click');//delete this, it's just to test if js works
 const isDropdownButton = e.target.matches("[data-dropdown-button]")
     if (!isDropdownButton && e.target.closest('[data-dropdown]') != null) return
 

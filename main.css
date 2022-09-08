@@ -1,6 +1,6 @@
 body{
     background-color: burlywood;
-    margin: 20px 80px;
+    margin: 80px 80px;
 }
 h1 {
     font-family: cursive;
@@ -34,7 +34,10 @@ table, td{
     align-items: baseline;
     padding: .5rem;
     gap: 1rem;
-    width: max-content;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .link {
@@ -88,4 +91,9 @@ table, td{
 
 .login-form > input {
     margin-bottom:  .5rem;
+}
+
+.right{
+    position: absolute;
+    right: 40px;
 }
