@@ -50,9 +50,35 @@ table, td{
     padding: 0;
 }
 
+.link-menu {
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: darkorange;
+    font-family: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+.link-menu:hover {
+    color: #f78800;
+}
+
+.link-category {
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: darkorange;
+    font-family: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+.link-category:hover {
+    color: #f78800;
+}
 .dropdown.active > .link,
 .link:hover {
-    color: black;
+    color: #f78800;
+    background-color: #532904;
 }
 .dropdown {
     position: relative;
@@ -66,7 +92,7 @@ table, td{
     padding: .75rem;
     border-radius: .25rem;
     box-shadow: 0 2px 5px 0 rgba(0,0,0, .1);
-    opacity: 0;
+    opacity: 0%;
     pointer-events: none;
     transform: translateY(-10px);
     transition: opacity 150ms ease-in-out;
@@ -107,6 +133,7 @@ table, td{
     display: flex;
     flex-direction: column;
     gap: .25rem;
+    opacity: 80%;
 }
 
 .login-form > input {
