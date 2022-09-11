@@ -2421,14 +2421,15 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: saddlebrown;
+  border-color: #532904;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color: #88450a;
+  border-color: #532904;
+  opacity: 80%;
 }
 
 .btn-primary:focus, .btn-primary.focus {
