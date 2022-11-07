@@ -218,12 +218,25 @@ table, td{
 /*Grid*/
 
 .grid {
-    border: #0a0807;
+    border: 2px #0a0807 solid;
     width: 500px;
     height: 500px;
     display: grid;
-    
+    grid-template: 2fr 1fr/30% 20% 1fr;
+    row-gap: 10px;
+    column-gap: 2px;
 }
+
+.box {
+    align-items: center;
+    display: grid;
+    background-color: #c05d17;
+    border-radius: 2px;
+    color: #0a0807;
+    border: 2px black solid;
+}
+
+
 
 .footer {
     position:fixed;
