@@ -180,6 +180,20 @@ table, td{
     align-items: center;
     justify-content: center;
     flex-shrink: inherit;
+    position: relative;
+}
+
+.txt-on-the-img {
+    position: absolute;
+    z-index: 1;
+    bottom: 1px;
+    text-align: center;
+    background-color:#f75600;
+    width: 100%;
+}
+
+.container-head {
+    
 }
 
 .footer {
