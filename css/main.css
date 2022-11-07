@@ -175,6 +175,13 @@ table, td{
     color: black;
 }
 
+.brain-working {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: inherit;
+}
+
 .footer {
     position:fixed;
     bottom:0px;
