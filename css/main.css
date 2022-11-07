@@ -23,6 +23,10 @@ h3 {
 
 li {
     font-family: cursive;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+
 }
 
 img:hover{
@@ -34,8 +38,7 @@ img:hover{
     width: 80%;
     display: block;
     margin: 0 auto;
-
-
+    shape-image-threshold:inherit;
 }
 
 table, td{
