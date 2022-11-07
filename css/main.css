@@ -175,6 +175,8 @@ table, td{
     color: black;
 }
 
+/*flexbox*/
+
 .brain-working {
     display: flex;
     align-items: center;
@@ -193,6 +195,33 @@ table, td{
 }
 
 .container-head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.figure-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+
+.mem { 
+    height: 650px;
+    width: 500px;
+}
+
+/*Grid*/
+
+.grid {
+    border: #0a0807;
+    width: 500px;
+    height: 500px;
+    display: grid;
     
 }
 
