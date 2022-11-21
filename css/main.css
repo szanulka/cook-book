@@ -296,7 +296,7 @@ td {
 	display: flexbox;
 	justify-content: center;
 	min-height: 100vh;
-	background: #000;
+	
 }
 
 .btn-transition {
@@ -366,4 +366,41 @@ td {
 	width: 100%;
 	height: 100%;
 	transition-delay: 0s;
+}
+
+.trans-photo {
+	position: relative;
+	display: inline-block;
+	height: 60%;
+	align-items: center;
+}
+
+.trans-photo img {
+	cursor: pointer;
+}
+
+.trans-photo .philosophical-photo {
+	margin-top: 50px;
+	height: 430px;
+	width: 575px;
+}
+
+.trans-photo .brain-anathomy {
+	position: absolute;
+	top: 260px;
+	left: 230px;
+	z-index: 1;
+	max-height: 50px;
+	transition-property: max-height;
+	transition-duration: 750ms;
+	transition-timing-function: linear;
+}
+
+.brain-anathomy {
+	clip-path: circle(40%);
+}
+
+.trans-photo .brain-anathomy:hover {
+	max-height: 180px;
+	opacity: 100%;
 }
