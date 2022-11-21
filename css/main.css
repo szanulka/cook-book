@@ -292,6 +292,13 @@ td {
 	}
 } */
 
+.body-transition {
+	display: flexbox;
+	justify-content: center;
+	min-height: 100vh;
+	background: #000;
+}
+
 .btn-transition {
 	position: relative;
 	padding: 10px 30px;
