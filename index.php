@@ -1,6 +1,6 @@
 <?php
 
-echo 'nigger xD';
+echo 'Hello world :D';
 
 
 ?>
