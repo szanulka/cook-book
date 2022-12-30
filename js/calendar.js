@@ -32,7 +32,6 @@ fillTable(events); //tu odpalamy funkcję zapełniającą tabelę jeśli chcesz 
 
 function fillTable(events) {
     for (i = 0; i < events.length; i++) {
-        console.log('add row')
         addRow('table', events[i]);
     }
 }
