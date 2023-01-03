@@ -150,8 +150,8 @@ eventsSorted = events.filter()*/
 
 
 
-events.length = 10; 
 
+events.length = 10; 
 
 
 
