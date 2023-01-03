@@ -139,14 +139,18 @@ function compare( a, b ) {
     return 0;
 }
 
+
 let eventsSorted = events.sort( compare );
 
 
+/*for (let eventsFilter = 0; eventsFilter = important;   )
 
-for (let eventsFilter = 0; eventsFilter = important;   )
+eventsSorted = events.filter()*/
 
 
 
+
+events.length = 10; 
 
 
 
