@@ -140,24 +140,74 @@ function compare( a, b ) {
 }
 
 
+const log = console.log; 
+
+log('\n\n built-in sort method');
+log(events.sort());
+
+function byTitle(a, b) {
+	if (a.title > b.title) {
+		return 1; 
+	} else if (b.title > a.title) {
+		return -1;
+	} else {
+		return 0;
+	}
+}
+
+
+
+
+
+
+
 let eventsSorted = events.sort( compare );
 
 
-/*for (let eventsFilter = 0; eventsFilter = important;   )
+/* for (let eventsFilter = 0; eventsFilter = important;  )*/
 
-eventsSorted = events.filter()*/
-
-
+//events.length = 5;
 
 
 
-events.length = 10; 
 
 
+
+	
+
+
+
+
+//eventsSorted = events.filter()
+
+/*
+events.sort(date(a, b) {
+    if ( a.date < b.date ); {
+        return -1;
+    }
+    if ( a.date > b.date ){
+        return 1;
+    }
+    return 0;
+} 
+*/
+
+//events.forEach((title, index) => console.log(`${index}: ${title}`));
+//let lowerTitle = events.map((title, index) => title.toLowerCase());
+
+
+/*let filteredevents = events.filter(title => {
+	return title.length < 10;
+});*/
+
+
+//let reduceEvents = events.reduce((count, title) => count += title.length, 0);
+//events sortNum (a, b) {return a - b;}
+//let eventsCount = events.reduce((count, title) => title.length, 0)
+//console.log(eventsCount);
 
 
 fillTable(eventsSorted);
-
 
 
 
@@ -178,4 +228,8 @@ function addRow(eventTable, event) {
         newCell.appendChild(newText);
     }
 }
+
+
+
+/////////////////////////////////////////////////
 
