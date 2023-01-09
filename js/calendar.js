@@ -155,13 +155,13 @@ function byTitle(a, b) {
 	}
 }
 
+log(byTitle);
+
+//let eventsSorted = events.sort (byTitle)
 
 
 
-
-
-
-let eventsSorted = events.sort( compare );
+//let eventsSorted = events.sort( compare );
 
 
 /* for (let eventsFilter = 0; eventsFilter = important;  )*/
@@ -180,19 +180,22 @@ let eventsSorted = events.sort( compare );
 
 //eventsSorted = events.filter()
 
-/*
-events.sort(date(a, b) {
-    if ( a.date < b.date ); {
+
+/*function byDate(a, b) {
+    if ( new Date(a.date) < new Date(b.date) ); {
         return -1;
     }
-    if ( a.date > b.date ){
+    if (new Date(a.date) > new Date(b.date) ){
         return 1;
     }
     return 0;
 } 
-*/
+let eventsSorted = events.sort (byDate)*/
 
-//events.forEach((title, index) => console.log(`${index}: ${title}`));
+
+
+
+events.forEach((title) => console.log(`${title}`));
 //let lowerTitle = events.map((title, index) => title.toLowerCase());
 
 
