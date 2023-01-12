@@ -1,9 +1,15 @@
+let eventsSorted = [];
+/* const Priority = {
+	name: "", 
+	importans: , 
+  }; */
+
 const events = [
 	{
 		date: new Date(2023, 0, 1),
 		title: "New Year's Day",
 		note: "Buy champagne",
-		priority: "less important",
+		priority:"less important",
 	},
 	{
 		date: new Date(2023, 0, 24),
@@ -128,23 +134,22 @@ const events = [
 	},
 ];
 
-let eventsSorted = events.sort(byDate);
 
 //                                           Tabela
-fillTable(eventsSorted);
+fillTable(events);
 
 function fillTable(events) {
+	document.getElementById("eventTable").innerHTML = "";
 	for (i = 0; i < events.length; i++) {
 		addRow("table", events[i]);
 	}
+
 }
 
 function addRow(_eventTable, event) {
 	let tableRef = document.getElementById("eventTable");
-	console.log("tableRef", tableRef);
 	let newRow = tableRef.insertRow(-1);
 	for (let prop in event) {
-		console.log("prop");
 		let newCell = newRow.insertCell(-1);
 		let newText = document.createTextNode(event[prop]);
 		newCell.appendChild(newText);
@@ -152,8 +157,8 @@ function addRow(_eventTable, event) {
 }
 
 //                                         Priority
-/*
-function byPriority( a, b ) {
+
+function byPriorityUp( a, b ) {
     if ( a.priority < b.priority ){
         return -1;
     }
@@ -162,10 +167,20 @@ function byPriority( a, b ) {
     }
     return 0;
 }
-*/
+
+
+function byPriorityDown( a, b ) {
+    if ( a.priority > b.priority ){
+        return -1;
+    }
+    if ( a.priority < b.priority ){
+        return 1;
+    }
+    return 0;
+}
 
 //                                          Title
-/*
+
 function byTitle(a, b) {
 	if (a.title > b.title) {
 		return 1; 
@@ -175,7 +190,7 @@ function byTitle(a, b) {
 		return 0;
 	}
 }
-*/
+
 
 //                                          Length
 //events.length = 5;
@@ -183,7 +198,7 @@ function byTitle(a, b) {
 
 
 //                                          Name
-/*
+
 function byName(a, b) {
 	if (a.name > b.name) {
 		return 1;
@@ -193,7 +208,7 @@ function byName(a, b) {
 		return 0;
 	}
 }
-*/
+
 
 //                                          Date
 function byDate(a, b) {
@@ -207,9 +222,23 @@ function byDate(a, b) {
 }
 
 
-console.log(events[0]);
-console.log(events[0].date);
-console.log(events[0].date.getTime());
-console.log(events[0].date.getUTCDate());
-console.log(events[0].date.toDateString());
-console.log(events[0].date.getUTCMilliseconds());
+
+  function hello() {
+	alert("Hello");
+}
+
+function sortByPriorityUp(events) {
+	 eventsSorted = events.sort(byPriorityUp);
+	fillTable(eventsSorted);
+}
+
+function sortByPriorityDown(events) {
+	 eventsSorted = events.sort(byPriorityDown);
+	fillTable(eventsSorted);
+}
+
+
+function sortByDate(events) {
+	 eventsSorted = events.sort(byDate);
+	fillTable(eventsSorted);
+}
