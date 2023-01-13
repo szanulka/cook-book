@@ -181,28 +181,47 @@ function byPriorityDown( a, b ) {
 
 //                                          Title
 
-function byTitle(a, b) {
-	if (a.title > b.title) {
+function byTitleUp(a, b) {
+	if (a.title < b.title) {
 		return 1; 
-	} else if (b.title > a.title) {
+	} else if (a.title > b.title) {
 		return -1;
 	} else {
 		return 0;
 	}
 }
 
+function byTitleDown(a, b) {
+	if (a.title > b.title) {
+		return 1; 
+	} else if (a.title < b.title) {
+		return -1;
+	} else {
+		return 0;
+	}
+}
 
 //                                          Length
 //events.length = 5;
 
 
 
-//                                          Name
+//                                          Note
 
-function byName(a, b) {
-	if (a.name > b.name) {
+function byNoteUp(a, b) {
+	if (a.note < b.note) {
 		return 1;
-	} else if (b.name > a.name) {
+	} else if (a.note > b.note) {
+		return -1;
+	} else {
+		return 0;
+	}
+}
+
+function byNoteDown(a, b) {
+	if (a.note > b.note) {
+		return 1;
+	} else if (a.note < b.note) {
 		return -1;
 	} else {
 		return 0;
@@ -211,7 +230,18 @@ function byName(a, b) {
 
 
 //                                          Date
-function byDate(a, b) {
+function byDateUp(a, b) {
+	if (a.date > b.date) {
+		return 1;
+	} else if (a.date < b.date) {
+		return -1;
+	} else {
+		return 0;
+	}
+}
+
+
+function byDateDown(a, b) {
 	if (a.date < b.date) {
 		return 1;
 	} else if (a.date > b.date) {
@@ -220,7 +250,6 @@ function byDate(a, b) {
 		return 0;
 	}
 }
-
 
 
   function hello() {
@@ -238,7 +267,33 @@ function sortByPriorityDown(events) {
 }
 
 
-function sortByDate(events) {
-	 eventsSorted = events.sort(byDate);
+function sortByDateUp(events) {
+	 eventsSorted = events.sort(byDateUp);
 	fillTable(eventsSorted);
+}
+
+function sortByDateDown(events) {
+	eventsSorted = events.sort(byDateDown);
+   fillTable(eventsSorted);
+}
+
+ 
+function sortByTitleUp(events) {
+	eventsSorted = events.sort(byTitleUp);
+   fillTable(eventsSorted);
+}
+
+function sortByTitleDown(events) {
+	eventsSorted = events.sort(byTitleDown);
+   fillTable(eventsSorted);
+}
+
+function sortByNoteUp(events) {
+	eventsSorted = events.sort(byNoteUp);
+   fillTable(eventsSorted);
+}
+
+function sortByNoteDown(events) {
+	eventsSorted = events.sort(byNoteDown);
+   fillTable(eventsSorted);
 }

@@ -19,15 +19,44 @@
           <input type="button" value="Sort Priority Up" onclick="sortByPriorityUp(events)">
           <input type="button" value="Sort Priority Down" onclick="sortByPriorityDown(events)">
           <input type="button" value="Hello" onclick="hello()">
-          <input type="button" value="Sort Date" onclick="sortByDate(events)">
+          <input type="button" value="Sort Date Up" onclick="sortByDateUp(events)">
+          <input type="button" value="Sort Date Down" onclick="sortByDateDown(events)">
+          <input type="button" value="Sort Title Up" onclick="sortByTitleUp(events)">
+          <input type="button" value="Sort Title Down" onclick="sortByTitleDown(events)">
+          <input type="button" value="Sort Note Up" onclick="sortByNoteUp(events)">
+          <input type="button" value="Sort Note Down" onclick="sortByNoteDown(events)">
 
-        
+        <div class="radio">
+          <p>Sort Priority</p>
+          <input type="radio" id="sort-prrt-up" name="sort" value="up" onclick="sortByPriorityUp(events)">
+          <label for="up">Up</label>
+          <br>
+          <input type="radio" id="sort-prrt-down" name="sort" value="down" onclick=sortByPriorityDown(events)>
+          <label for="down">Down</label>
 
+          <p>Sort Date</p>
+          <input type="radio" id="sort-date-up" name="sort" value="up" onclick="sortByDateUp(events)">
+          <label for="up">Up</label>
+          <br>
+          <input type="radio" id="sort-date-down" name="sort" value="down" onclick=sortByDateDown(events)>
+          <label for="down">Down</label>
 
+          <p>Sort Title</p>
+          <input type="radio" id="sort-ttl-up" name="sort" value="up" onclick="sortByTitleUp(events)">
+          <label for="up">Up</label>
+          <br>
+          <input type="radio" id="sort-ttl-down" name="sort" value="down" onclick=sortByTitleDown(events)>
+          <label for="down">Down</label>
 
+          <p>Sort Note</p>
+          <input type="radio" id="sort-note-up" name="sort" value="up" onclick="sortByNoteUp(events)">
+          <label for="up">Up</label>
+          <br>
+          <input type="radio" id="sort-note-down" name="sort" value="down" onclick=sortByNoteDown(events)>
+          <label for="down">Down</label>
+
+        </div>
       </div>
-
-     
     </form>  
   </section>
 </body>
