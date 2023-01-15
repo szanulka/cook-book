@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/main.css">
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">//this adds jquery, a javascript library to your page
+    </script>
+    <script src="../js/script.js" defer></script>
+    <script src="../js/calendar.js" defer></script>
+</head>
+<body>
+
+
+  <section>
+    <form>
+     <h1>Calendar</h1>
+     <table id="eventTable"></table>
+      <div class="filters">
+        <div class="filters_btn"></div>
+
+          <input type="button" value="Sort Priority Up" onclick="sortByPriorityUp(events)">
+          <input type="button" value="Sort Priority Down" onclick="sortByPriorityDown(events)">
+          <input type="button" value="Hello" onclick="hello()">
+          <input type="button" value="Sort Date Up" onclick="sortByDateUp(events)">
+          <input type="button" value="Sort Date Down" onclick="sortByDateDown(events)">
+          <input type="button" value="Sort Title Up" onclick="sortByTitleUp(events)">
+          <input type="button" value="Sort Title Down" onclick="sortByTitleDown(events)">
+          <input type="button" value="Sort Note Up" onclick="sortByNoteUp(events)">
+          <input type="button" value="Sort Note Down" onclick="sortByNoteDown(events)">
+
+        </div>
+      </form>
+    </section>
+
+
+    <section>
+      <form>
+        <div class="radio">
+
+          <p>Sort Priority</p>
+          <input type="radio" id="sort-prrt-up" name="sort" value="up" onclick="sortByPriorityUp(events)">
+          <label for="up">Up</label>
+          <br>
+          <input type="radio" id="sort-prrt-down" name="sort" value="down" onclick=sortByPriorityDown(events)>
+          <label for="down">Down</label>
+
+          <p>Sort Date</p>
+          <input type="radio" id="sort-date-up" name="sort" value="up" onclick="sortByDateUp(events)">
+          <label for="up">Up</label>
+          <br>
+          <input type="radio" id="sort-date-down" name="sort" value="down" onclick=sortByDateDown(events)>
+          <label for="down">Down</label>
+
+          <p>Sort Title</p>
+          <input type="radio" id="sort-ttl-up" name="sort" value="up" onclick="sortByTitleUp(events)">
+          <label for="up">Up</label>
+          <br>
+          <input type="radio" id="sort-ttl-down" name="sort" value="down" onclick=sortByTitleDown(events)>
+          <label for="down">Down</label>
+
+          <p>Sort Note</p>
+          <input type="radio" id="sort-note-up" name="sort" value="up" onclick="sortByNoteUp(events)">
+          <label for="up">Up</label>
+          <br>
+          <input type="radio" id="sort-note-down" name="sort" value="down" onclick=sortByNoteDown(events)>
+          <label for="down">Down</label>
+
+        </div>
+      </form>
+    </section> 
+
+    <section>
+      <form>
+        <div>
+
+         <label for="sort">Sort Priority</label>
+          <select id="drop-sort-priority" name="drop-sort-priority">
+            <option value="up" onclick="sortByPriorityUp(events)">Up</option>
+            <option value="down" onclick="sortByPriorityDown(events)">Down</option>
+          </select>
+
+          <label for="sort">Sort Date</label>
+          <select id="drop-sort-date" name="drop-sort-date">
+            <option value="up" onclick="sortByDateUp(events)">Up</option>
+            <option value="down" onclick="sortByDateDown(events)">Down</option>
+          </select>
+
+          <label for="sort">Sort Title</label>
+          <select id="drop-sort-title" name="drop-sort-title">
+            <option value="up" onclick="sortByTitleUp(events)">Up</option>
+            <option value="down" onclick="sortByTitleDown(events)">Down</option>
+          </select>
+
+          <label for="sort">Sort Note</label>
+          <select id="drop-sort-note" name="drop-sort-note">
+            <option value="up" onclick="sortByNoteUp(events)">Up</option>
+            <option value="down" onclick="sortByNoteDown(events)">Down</option>
+          </select>
+       
+        </div>
+      </form> 
+    </section>   
+  
+</body>
+<footer class="footer">
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+</footer>
+</html>
