@@ -13,7 +13,7 @@ app.set('views', path.join(__dirname + '/views'));
 app.set('view engine', 'html');
 app.engine('html', require('ejs').renderFile)
 
-app.get('' || '/index.html', (req, res) => {
+app.get('' , (req, res) => {
     // res.render('index')
     res.sendFile(__dirname + '/views/index.html')
 })
@@ -39,10 +39,10 @@ let connection = mysql.createConnection({
     host: "localhost",
     database: "cookbook",
     user: "root",
-    password: ""
+    password: "Nickelodeon123"
 });
 
-let sql = "SELECT * FROM hello";
+let sql = "SELECT * FROM events";
 
 connection.connect(function(err) {
     if (err) throw err;

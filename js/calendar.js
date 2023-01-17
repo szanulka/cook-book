@@ -266,6 +266,13 @@ function sortByPriorityDown(events) {
 	fillTable(eventsSorted);
 }
 
+function dropSortPriority(event) {
+	console.log("up")
+	let selection = event.target.value;
+	if (selection == "up") {
+		sortByPriorityUp(events);
+	}
+}
 
 function sortByDateUp(events) {
 	 eventsSorted = events.sort(byDateUp);
