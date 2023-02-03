@@ -5,7 +5,9 @@ const fs = require('fs')
 const app = express()
 const hostname = '127.0.0.1';
 const port = 3000;
+const os = require('os');
 
+console.log(os.uptime());
 app.use(express.static(path.join(__dirname, '/public')));
 app.use('/css', express.static(__dirname + '/css'))
 app.use('/js', express.static(__dirname + '/js'))
@@ -34,15 +36,83 @@ app.get(route = 'index.html', (req, res) => {
 
 app.listen(port, () => console.info(`App listening on port ${port}`))
 
+
+
+
+class Car {
+    _registration;
+
+    constructor(make, model, color, wheels, registration) {
+      this.make = make;
+      this.model = model;
+      this.color = color;
+      this.wheels = wheels;
+      this._registration = registration;
+      
+      }
+      
+    
+  } 
+  class Truck extends Car {
+    constructor(make, model, color, wheels,registration, bedtype) {
+        super(make, model, color, wheels, registration);
+        this.bedtype = bedtype;
+    }
+    get showRegistration() {
+        return console.log(this._registration);
+    }
+  }
+
+  
+  
+  const protoCar = new Car('Honda', 'Jazz', 'silver', 4, 'RP12345' );
+
+console.log(protoCar);
+
+  const motoTruck = new Truck('Star', '57-X', 'red', 10, 'RP98765', 'flatbed');
+
+  console.log(motoTruck);
+
+  motoTruck.showRegistration;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let mysql = require('mysql');
 let connection = mysql.createConnection({
     host: "localhost",
     database: "cookbook",
     user: "root",
-    password: ""
+    password: "Nickelodeon123"
 });
 
-let sql = "SELECT * FROM hello";
+let sql = "SELECT * FROM events";
 
 connection.connect(function(err) {
     if (err) throw err;

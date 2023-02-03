@@ -297,3 +297,5 @@ function sortByNoteDown(events) {
 	eventsSorted = events.sort(byNoteDown);
    fillTable(eventsSorted);
 }
+
+connection

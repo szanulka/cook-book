@@ -1,3 +1,18 @@
 {
-	"livePreview.defaultPreviewPath": "/Users/luizakrasnowska/WebstormProjects/cook book/cook-book/index.html"
+	"livePreview.defaultPreviewPath": "/Users/luizakrasnowska/WebstormProjects/cook book/cook-book/index.html",
+	"sqltools.connections": [
+		{
+			"mysqlOptions": {
+				"authProtocol": "default"
+			},
+			"previewLimit": 50,
+			"server": "127.0.0.1",
+			"port": 3306,
+			"driver": "MySQL",
+			"name": "cookbook",
+			"database": "cookbook",
+			"username": "root",
+			"password": "Nickelodeon123"
+		}
+	]
 }
