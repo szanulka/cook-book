@@ -6,6 +6,12 @@ const app = express()
 const hostname = '127.0.0.1';
 const port = 3000;
 const os = require('os');
+//const exercise = require('./exercise');
+//const exercise1 = require('./exercise1');
+//const exercise2= require('./exercise2');
+//const exercise3= require('./exercise3');
+const exercise4= require('./exercise4');
+
 
 console.log(os.uptime());
 app.use(express.static(path.join(__dirname, '/public')));
@@ -37,7 +43,7 @@ app.get(route = 'index.html', (req, res) => {
 app.listen(port, () => console.info(`App listening on port ${port}`))
 
 
-
+/*
 
 class Car {
     _registration;
@@ -79,6 +85,7 @@ console.log(protoCar);
 
 
 
+*/
 
 
 
@@ -101,8 +108,7 @@ console.log(protoCar);
 
 
 
-
-
+/*
 
 let mysql = require('mysql');
 let connection = mysql.createConnection({
@@ -122,3 +128,4 @@ connection.connect(function(err) {
         console.log("Result: " + JSON.stringify(result));
     });
 });
+*/
