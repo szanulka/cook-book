@@ -13,6 +13,33 @@
 <body onload="fillTable(data)">
 
 
+  <table class="table__calendar">
+    <thead class="table__header">
+        <tr>
+          <th>#Id</th>
+          <th>Title</th>
+          <th>Priority</th>
+          <th>Note</th>
+          <th>Date</th>
+        </tr> 
+     </thead>
+    <tbody class="table__body">
+    <% if(data.length){ for(var i = 0; i< data.length; i++) {%>
+    <tr>
+        <th scope="row"><%= (i+1) %></th>
+        <td><%= data[i].title%></td>
+        <td><%= data[i].priority%></td>
+        <td><%= data[i].note%></td>
+        <td><%= data[i].data%></td>
+    </tr>
+    <% } }else{ %>
+    <tr>
+        <td>No data ever existed.</td>
+    </tr>
+    <% } %>
+    </tbody>
+</table>
+
   <section>
     <form>
      <h1>Calendar</h1>

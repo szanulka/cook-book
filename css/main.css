@@ -44,8 +44,8 @@ img:hover {
 	shape-image-threshold: inherit;
 }
 
-table,
-td {
+
+.table_soup {
 	border: 1px solid black;
 	text-align: left;
 }
@@ -404,3 +404,34 @@ td {
 	max-height: 180px;
 	opacity: 100%;
 }
+
+
+.table__calendar {
+	align-items: center;
+	width: 82vw;
+	height: 35vw;
+	background-color: #fff5;
+	backdrop-filter: blur(7px);
+	box-shadow: 0 .5rem .8rem #0005;
+	border-radius: .8rem;
+	overflow: hidden;
+}
+
+.table__header {
+	width: 100%;
+	height: 10%;
+	background-color: #fff4;
+	padding: .8rem 1rem;
+}
+
+
+
+.table__body {
+	width: 95%;
+	max-height: 89%;
+	background-color: #fffb;
+	margin: .8rem auto;
+	border-radius: .6rem;
+	overflow: auto;
+}
+
