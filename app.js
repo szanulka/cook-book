@@ -33,7 +33,16 @@ app.get('/soups.html', (req, res) => {
     res.sendFile(__dirname + '/views/soups.html')
 })
 app.get('/calendar.html', (req, res) => {
-    res.sendFile(__dirname + '/views/calendar.html')
+    db('SELECT * FROM events', function (err, rows) {
+        if (err) {
+            req.flash('error', err)
+            res.render('calendar', { data: '' })
+        } else {
+            console.log(rows)
+            res.render('calendar', { data: rows })
+        }
+    })
+    // res.sendFile(__dirname + '/views/calendar.html')
 })
 
 app.get(route = 'index.html', (req, res) => {
