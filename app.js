@@ -8,7 +8,7 @@ const port = 3000;
 const os = require('os');
 const db = require('./js/db');
 const bodyParser = require("body-parser")
-
+const moment = require('moment');
 //const exercise = require('./exercise');
 //const exercise1 = require('./exercise1');
 //const exercise2= require('./exercise2');
@@ -52,7 +52,7 @@ app.get('/calendar.html', (req, res) => {
             res.render('calendar', { data: '' })
         } else {
             console.log(rows)
-            res.render('calendar', { data: rows })  //JAKA JEST RÓNICA MIĘDZY RENDER A SENDFILE
+            res.render('calendar', { data: rows, moment })  //JAKA JEST RÓNICA MIĘDZY RENDER A SENDFILE
         }
     })
     
@@ -75,6 +75,18 @@ app.post("/", function(req, res) {
         }
     })
   });
+
+  app.delete('/:id', function (req, res) {
+    console.log("DELETE", req.params.id)
+    //Review.findByIdAndRemove(req.params.id).then((review) => {
+    //  res.redirect('/');
+    //}).catch((err) => {
+    //  console.log(err.message);
+    //})
+  })
+  
+  
+
 
 
 app.listen(port, () => console.info(`App listening on port ${port}`))
