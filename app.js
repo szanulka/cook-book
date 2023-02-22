@@ -58,6 +58,11 @@ app.get('/calendar.html', (req, res) => {
     
 })
 
+app.get('/modal-playground.html', (req, res) => {
+   
+    res.sendFile(__dirname + '/views/modal-playground.html')
+})
+
 
 app.post("/", function(req, res) {
     let title = req.body.title;

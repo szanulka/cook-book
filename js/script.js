@@ -1,3 +1,4 @@
+console.log('js działa');
 $("#header").load('header.html'); //this loads header.html to the div with the id #header and css works here this time
 
 document.addEventListener('click', e=> {
