@@ -13,7 +13,6 @@
     <script src="../js/calendar.js" defer></script>
 </head>
 <body onload="fillTable(data)">
-<div class="test_class">This is a test</div>
   <form action="/" method="POST">
     <div class="view_events">
     
@@ -47,9 +46,11 @@
         <td><%= moment(data[i].data).format("DD-MM-YYYY") %></td>
         <td><%= data[i].note%></td>
         <td><%= data[i].priority%></td>
-        <form method="POST" action="/{{i}}?_method=DELETE">
-        <td><button type="button" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this item?');" >Delete</button></td>
-</form>
+        <td>
+            <form method="POST" action="/delete:<%= data[i].id %>">    
+              <button type="submit" class="btn_delete" onclick="return confirm('Are you sure to delete?')">Delete</button>
+           </form>
+        </td>
     </tr>
     <% } }else{ %>
     <tr>
@@ -59,7 +60,7 @@
     </tbody>
 </table>
 
-  <section>
+  <!-- <section>
     <form>
      <h1>Calendar</h1>
      <table id="eventTable"></table>
@@ -154,4 +155,4 @@
     <a href="contact.html">Contact</a>
     <a href="about.html">About</a>
 </footer>
-</html>
+</html> -->

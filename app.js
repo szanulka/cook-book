@@ -76,14 +76,18 @@ app.post("/", function(req, res) {
     })
   });
 
-  app.delete('/:id', function (req, res) {
-    console.log("DELETE", req.params.id)
-    //Review.findByIdAndRemove(req.params.id).then((review) => {
-    //  res.redirect('/');
-    //}).catch((err) => {
-    //  console.log(err.message);
-    //})
-  })
+  app.post('/delete:id', function (req, res) {
+    let id = (req.params.id.slice(1));
+    let sql = `DELETE FROM events WHERE id = ${id}`; 
+    db(sql, function (err, rows) {
+        if (err) {
+            res.send(err)
+            req.flash('error', err)
+        } else {
+            res.redirect('/calendar.html');
+        }
+    })
+  });
   
   
 
