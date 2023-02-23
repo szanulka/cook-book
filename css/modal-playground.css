@@ -17,25 +17,31 @@
   }
 
   .modal {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
-    gap: 0.4rem;
+    gap: 0.8rem;
     width: 450px;
     padding: 1.3rem;
-    min-height: 250px;
-    position: absolute;
-    top: 20%;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 15px;
+    height: 300px;
+    position: relative;
+    bottom: 20px;
+    background-color: #ffe9d2;
     z-index: 2;
+    background: linear-gradient(90deg, #ff6700, #ffb100 ) border-box;
+    border-width: 3px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 15px;
   }
-  
+    
   .modal .flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    
   }
   
   .modal input {
@@ -58,26 +64,30 @@
   }
   
   .btn {
-    display: inline-block;
+    display: flex;
     padding: 0.8rem 1.4rem;
     font-weight: 700;
-    background-color: black;
-    color: white;
+    background-color: rgb(244, 134, 37);
+    color: black;
+    border: 0.5px solid black;
     border-radius: 5px;
     text-align: center;
     font-size: 1em;
+    margin-bottom: 20px;
   }
   
   .btn-open {
-    position: absolute;
+    position: static;
     bottom: 150px;
   }
   
   .btn-close {
     transform: translate(10px, -20px);
     padding: 0.5rem 0.7rem;
-    background: #eee;
+    background: #ffb100;
     border-radius: 50%;
+    position: relative;
+    left: 90%;
   }
 
   .overlay {

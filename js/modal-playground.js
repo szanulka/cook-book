@@ -30,5 +30,7 @@ openModalBtn.addEventListener("click", openModal);
 
   
 
-
+const editEvetns = (id, editEvetns) => {
+  setEvents(events.map((event) => event.id === id? editEvetn : event))
+}
   
