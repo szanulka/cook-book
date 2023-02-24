@@ -16,7 +16,7 @@ body {
   background-color: #b3b6f4;
 }
 
-.modal {
+.event-edit-modal {
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
@@ -24,8 +24,7 @@ body {
   width: 450px;
   padding: 1.3rem;
   height: 600px;
-  position: relative;
-  bottom: 20px;
+  position: absolute;
   background-color: #ffe9d2;
   z-index: 2;
   background: linear-gradient(90deg, #ff6700, #ffb100 ) border-box;
@@ -34,7 +33,7 @@ body {
   border-radius: 15px;
 }
   
-.modal .flex {
+.event-edit-modal .flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,14 +42,14 @@ body {
   
 }
 
-.modal input {
+.event-edit-modal input {
   padding: 0.7rem 1rem;
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 0.9em;
 }
 
-.modal p {
+.event-edit-modal p {
   font-size: 0.9rem;
   color: #777;
   margin: 0.4rem 0 0.2rem;
