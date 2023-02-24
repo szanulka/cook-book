@@ -23,7 +23,7 @@
       <input class="inp_data" type="date" id="data" name="data" min="2022-01-01" max="2025-12-31" placeholder="Data" required>
       <input class="inp_priority" type="number" id="priority" name="priority" min="1" max="3" placeholder="Priority" required>
       <br><br>
-      <button type ="submit">Submit</button>
+      <button class= "views_submit" type ="submit">Submit</button>
       <br><br><br>
     </div>
    </form>
@@ -38,7 +38,7 @@
           <th>Date</th>
           <th>Note</th>
           <th>Priority</th>
-          <th>Actions</th>
+          <th>Actiservice ons</th>
         </tr> 
      </thead>
     <tbody class="table__body">
@@ -50,8 +50,10 @@
         <td><%= data[i].note%></td>
         <td><%= data[i].priority%></td>
         <td>
+          
             <form method="POST" action="/delete:<%= data[i].id %>">    
               <button type="submit" class="btn_delete" onclick="return confirm('Are you sure to delete?')">Delete</button>
+              <button class="btn btn-open" img="https://cdn.icon-icons.com/icons2/2621/PNG/512/gui_edit_icon_157165.png" alt="edit icon">Open Modal</button>
            </form>
         </td>
     </tr>

@@ -14,6 +14,7 @@ const moment = require('moment');
 //const exercise2= require('./exercise2');
 //const exercise3= require('./exercise3');
 const exercise4= require('./exercise4');
+const { Router } = require('express')
 
 
 console.log(os.uptime());
@@ -64,6 +65,21 @@ app.get('/modal-playground.html', (req, res) => {
 })
 
 
+// app.get('/modal-playground.html', (req, res) => {
+//     db('SELECT * FROM events', function (err, rows) {
+//         if (err) {
+//             req.flash('error', err)
+//             res.render('calendar', { data: '' })
+//         } else {
+//             console.log(rows)
+//             res.render('calendar', { data: rows, moment }) 
+//         }
+//     })
+    
+// })
+
+
+
 app.post("/", function(req, res) {
     let title = req.body.title;
     let note = req.body.note;
@@ -93,6 +109,8 @@ app.post("/", function(req, res) {
         }
     })
   });
+
+  
   
   
 

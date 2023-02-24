@@ -13,18 +13,19 @@
 <body>
     <section class="modal hidden">
         <div class="flex">
-            <!-- img -->
             <button class="btn-close">⨉</button>
         </div>
         <div>
             <h3>Edit Events</h3>
         </div>
-    
-            <input type="email" id="email" placeholder="brendaneich@js.com" />
+        <input class="inp_title" type="text" id="title" name="title" placeholder="Title" required>
+        <input class="inp_note" type="text" id="note" name="note" placeholder="Note" required>
+        <input class="inp_data" type="date" id="data" name="data" min="2022-01-01" max="2025-12-31" placeholder="Data" required>
+        <input class="inp_priority" type="number" id="priority" name="priority" min="1" max="3" placeholder="Priority" required>
             <button class="btn">Edit</button>
     </section>     
         <div class="overlay hidden"></div>
-         <button class="btn btn-open">Open Modal</button>
+        
     
 </body>
 </html>
