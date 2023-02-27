@@ -63,7 +63,7 @@ button {
 
 .btn {
   display: flex;
-  padding: 0.rem 1.4rem;
+  padding: 0.rem 1.8rem;
   font-weight: 700;
   background-color: linear-gradient(right, #ff6600, #ffb300);
   color: black;

@@ -15,16 +15,22 @@
  <body> 
   <body>
   <form action="/" method="POST">
-    <div class="view_events">
     
-      <h3>View an events</h3>
+    <div class="view_events">
+        <div class="water">
+          <h3>View an events</h3>
+          <h3>View an events</h3>
+        </div> 
+    <div class="input_container" >
       <input class="inp_title" type="text" id="title" name="title" placeholder="Title" required>
-      <input class="inp_note" type="text" id="note" name="note" placeholder="Note" required>
+      <label for="title" class="label_title">Title</label>
+       <input class="inp_note" type="text" id="note" name="note" placeholder="Note" required>
       <input class="inp_data" type="date" id="data" name="data" min="2022-01-01" max="2025-12-31" placeholder="Data" required>
-      <input class="inp_priority" type="number" id="priority" name="priority" min="1" max="3" placeholder="Priority" required>
+      <input class="inp_priority" type="number" id="priority" name="priority" min="1" max="3" placeholder="Priority" required> 
       <br><br>
       <button class= "views_submit" type ="submit">Submit</button>
       <br><br><br>
+     </div>
     </div>
    </form>
    

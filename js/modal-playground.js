@@ -1,4 +1,4 @@
-const modal = document.querySelector(".eent-edit-modal");
+const modal = document.querySelector(".event-edit-modal");
 const overlay = document.querySelector(".overlay");
 const openModalBtn = document.querySelector(".btn-open");
 const closeModalBtn = document.querySelector(".btn-close");
