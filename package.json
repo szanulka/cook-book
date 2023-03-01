@@ -1,0 +1,30 @@
+{
+  "name": "cook-book",
+  "version": "1.0.0",
+  "description": "A project for learning",
+  "main": "js/run.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Szanulka",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "moment": "^2.29.4",
+    "mysql": "^2.18.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szanulka/cook-book.git"
+  },
+  "bugs": {
+    "url": "https://github.com/szanulka/cook-book/issues"
+  },
+  "homepage": "https://github.com/szanulka/cook-book#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
