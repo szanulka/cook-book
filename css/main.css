@@ -422,7 +422,7 @@ img:hover {
 .water {
 	position: relative;
 	left: 50%;
-	bottom: inherit;
+	bottom: auto;
 }
 
 .water h3 {
@@ -464,7 +464,7 @@ img:hover {
 	position: absolute;
 	left: 10px;
 	top: 14px;
-	transition: 0.2s;
+	transition:all 0.2s;
 	padding: 0 2px;
 	z-index: 1;
 	color: #b3b3b3;
@@ -472,7 +472,7 @@ img:hover {
 
 .inp_title {
 	padding: 0.8rem;
-	width: 100%;
+	width: 80%;
 	height: 100%;
 	border: 2px solid #382f26;
 	background: linear-gradient(-240.71779327192945deg, #f86137 27.44921363040629%,rgba(248, 197, 91,1) 95.9288990825688%);
@@ -494,7 +494,7 @@ img:hover {
 	z-index: -1;
 }
 
-.inp_title:focus {
+.inp_title:focus{
 	border: 2px solid #f40303;
 }
 
@@ -505,13 +505,13 @@ img:hover {
 	font-size: 14px;
 }
 
-.inp_title::placeholder {
+.inp_title::placeholder  {
 	font-size: 16px;
 	opacity:0 ;
 	transition:all .3s;
 }
 
-.inp_title:focus::placeholder {
+.inp_title:focus::placeholder{
 	opacity: 1;
 	animation-delay: 0.2s;
 }
