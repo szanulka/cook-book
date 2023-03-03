@@ -1,2 +1,3 @@
-show tables;
+select * from event;
+
 

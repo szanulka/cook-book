@@ -62,16 +62,15 @@ button {
 }
 
 .btn {
-  display: flex;
-  padding: 0.rem 1.8rem;
-  font-weight: 700;
-  background-color: linear-gradient(right, #ff6600, #ffb300);
-  color: black;
-  border: 0.5px solid black;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 1em;
-  margin-bottom: 20px;
+  background-color: rgb(243, 59, 34);
+	border-radius: 5px;
+	width: 100%;
+	border: 0.5px solid black;
+	box-shadow: 0 0 3px 0 black;
+}
+
+.inp_modal {
+  width: 220px;
 }
 
 .btn-open {
@@ -90,6 +89,7 @@ button {
   border-radius: 50%;
   position: relative;
   left: 90%;
+  top: 15px;
 }
 
 .overlay {

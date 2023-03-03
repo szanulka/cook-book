@@ -18,14 +18,15 @@
         <div>
             <h3>Edit Events</h3>
         </div>
-        <input class="inp_title" type="text" id="title" name="title" placeholder="Title" required>
-        <label for="title" class="label_title">Title</label>
-        <input class="inp_title" type="text" id="note" name="note" placeholder="Note" required>
-        <label for="note" class="label_title">Note</label>
-        <input class="inp_title" type="date" id="data" name="data" min="2022-01-01" max="2025-12-31" placeholder="Data" required>
-        <label for="data" class="label_title">Data</label>
-        <input class="inp_title" type="number" id="priority" name="priority" min="1" max="3" placeholder="Priority" required>
-        <label for="priority" class="label_title">Priority</label>
+        <label>Title:
+        <input class="inp_modal" type="text" id="title" name="title" placeholder="Title" required></label>
+        <label>Note:
+        <input class="inp_modal" type="text" id="note" name="note" placeholder="Note" required></label>
+        <label>Data:
+        <input class="inp_modal" type="date" id="data" name="data" min="2022-01-01" max="2025-12-31" placeholder="Data" required></label>
+        <label>Priority:
+        <input class="inp_modal" type="number" id="priority" name="priority" min="1" max="3" placeholder="Priority" required></label>
+        
             <button class="btn">Edit</button>
     </section>     
         <div class="overlay hidden"></div>

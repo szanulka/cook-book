@@ -414,7 +414,6 @@ img:hover {
 	border-radius: .8rem;
 	position: relative;
 	bottom: 30px;
-
 }
 
 
@@ -459,6 +458,7 @@ img:hover {
 	width: 80%;
 	position: relative;
 	display: inline;
+	
 }
 
 .input_container input {
@@ -520,6 +520,14 @@ img:hover {
 	animation-delay: 0.2s;
 }
 
+.views_submit {
+	background-color: rgb(243, 59, 34);
+	border-radius: 5px;
+	width: 100%;
+	border: 0.5px solid black;
+	box-shadow: 0 0 3px 0 black;
+}
+
 
 .table__calendar {
 	align-items: center;
@@ -530,6 +538,7 @@ img:hover {
 	box-shadow: 0 .5rem .8rem #0005;
 	border-radius: .8rem;
 	overflow: hidden;
+	
 }
 
 .table__header {

@@ -1,5 +1,6 @@
 let eventsSorted = [];
-
+//console.log(__dirname);
+console.log('1' === 1);
 // const events = [
 // 	{
 // 		date: new Date(2023, 0, 1),
@@ -156,32 +157,32 @@ function addRow(_eventTable, event) {
 
 //                                         Priority
 
-function byPriorityUp( a, b ) {
-    if ( a.priority < b.priority ){
-        return -1;
-    }
-    if ( a.priority > b.priority ){
-        return 1;
-    }
-    return 0;
+function byPriorityUp(a, b) {
+	if (a.priority < b.priority) {
+		return -1;
+	}
+	if (a.priority > b.priority) {
+		return 1;
+	}
+	return 0;
 }
 
 
-function byPriorityDown( a, b ) {
-    if ( a.priority > b.priority ){
-        return -1;
-    }
-    if ( a.priority < b.priority ){
-        return 1;
-    }
-    return 0;
+function byPriorityDown(a, b) {
+	if (a.priority > b.priority) {
+		return -1;
+	}
+	if (a.priority < b.priority) {
+		return 1;
+	}
+	return 0;
 }
 
 //                                          Title
 
 function byTitleUp(a, b) {
 	if (a.title < b.title) {
-		return 1; 
+		return 1;
 	} else if (a.title > b.title) {
 		return -1;
 	} else {
@@ -191,7 +192,7 @@ function byTitleUp(a, b) {
 
 function byTitleDown(a, b) {
 	if (a.title > b.title) {
-		return 1; 
+		return 1;
 	} else if (a.title < b.title) {
 		return -1;
 	} else {
@@ -250,48 +251,48 @@ function byDateDown(a, b) {
 }
 
 
-  function hello() {
+function hello() {
 	alert("Hello");
 }
 
 function sortByPriorityUp(events) {
-	 eventsSorted = events.sort(byPriorityUp);
+	eventsSorted = events.sort(byPriorityUp);
 	fillTable(eventsSorted);
 }
 
 function sortByPriorityDown(events) {
-	 eventsSorted = events.sort(byPriorityDown);
+	eventsSorted = events.sort(byPriorityDown);
 	fillTable(eventsSorted);
 }
 
 
 function sortByDateUp(events) {
-	 eventsSorted = events.sort(byDateUp);
+	eventsSorted = events.sort(byDateUp);
 	fillTable(eventsSorted);
 }
 
 function sortByDateDown(events) {
 	eventsSorted = events.sort(byDateDown);
-   fillTable(eventsSorted);
+	fillTable(eventsSorted);
 }
 
- 
+
 function sortByTitleUp(events) {
 	eventsSorted = events.sort(byTitleUp);
-   fillTable(eventsSorted);
+	fillTable(eventsSorted);
 }
 
 function sortByTitleDown(events) {
 	eventsSorted = events.sort(byTitleDown);
-   fillTable(eventsSorted);
+	fillTable(eventsSorted);
 }
 
 function sortByNoteUp(events) {
 	eventsSorted = events.sort(byNoteUp);
-   fillTable(eventsSorted);
+	fillTable(eventsSorted);
 }
 
 function sortByNoteDown(events) {
 	eventsSorted = events.sort(byNoteDown);
-   fillTable(eventsSorted);
+	fillTable(eventsSorted);
 }
