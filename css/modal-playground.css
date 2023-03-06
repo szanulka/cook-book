@@ -47,6 +47,21 @@ body {
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 0.9em;
+  width: 200px;
+}
+
+.event-edit-modal label {
+  width: 80px;
+  font-family: monospace;
+}
+
+.heading_edit h3 {
+  font-family: monospace;
+}
+
+.modal-input-field {
+  display: inline;
+
 }
 
 .event-edit-modal p {
@@ -69,9 +84,6 @@ button {
 	box-shadow: 0 0 3px 0 black;
 }
 
-.inp_modal {
-  width: 220px;
-}
 
 .btn-open {
   background-color: rgb(243, 156, 34);

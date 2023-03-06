@@ -15,18 +15,25 @@
         <div class="flex">
             <button class="btn-close">⨉</button>
         </div>
-        <div>
+        <div class="heading_edit">
             <h3>Edit Events</h3>
         </div>
-        <label>Title:
-        <input class="inp_modal" type="text" id="title" name="title" placeholder="Title" required></label>
-        <label>Note:
-        <input class="inp_modal" type="text" id="note" name="note" placeholder="Note" required></label>
-        <label>Data:
-        <input class="inp_modal" type="date" id="data" name="data" min="2022-01-01" max="2025-12-31" placeholder="Data" required></label>
-        <label>Priority:
-        <input class="inp_modal" type="number" id="priority" name="priority" min="1" max="3" placeholder="Priority" required></label>
-        
+    <div class="modal-input-field">
+        <label>Title:</label>
+        <input class="inp_modal" type="text" id="title" name="title" placeholder="Title" required>
+    </div>
+    <div class="modal-input-field">
+        <label>Note:</label>
+        <input class="inp_modal" type="text" id="note" name="note" placeholder="Note" required>
+    </div>
+    <div class="modal-input-field">
+        <label>Data:</label>
+        <input class="inp_modal" type="date" id="data" name="data" min="2022-01-01" max="2025-12-31" placeholder="Data" required>
+    </div>
+    <div class="modal-input-field">
+        <label>Priority:</label>
+        <input class="inp_modal" type="number" id="priority" name="priority" min="1" max="3" placeholder="Priority" required>
+    </div> 
             <button class="btn">Edit</button>
     </section>     
         <div class="overlay hidden"></div>
